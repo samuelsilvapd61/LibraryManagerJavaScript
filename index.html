@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script type="module" src="./dist/script.js"></script>
+</head>
+<body>
+    <form id="saveNewBook" action="..." method="post">
+        <label for="bookTitle">Book's name:</label>
+        <input type="text" id="bookTitle" name="bookTitle" placeholder="Type book's name">
+        <br><br>
+        
+        <label for="authorName">Author's name:</label>
+        <input type="text" id="authorName" name="authorName" placeholder="Type author's name">
+        <br><br>
+
+        <label for="releaseDate">Book's release date:</label>
+        <input type="date" id="releaseDate" name="releaseDate" placeholder="Type book release date">
+        <br><br>
+
+        <button>Save book</button>
+    </form>
+    <br><br>
+
+    <div><h2>Library Database</h2></div>
+    <table id="bookTable" border="1">
+        <thead>
+          <tr>
+            <th>Book</th>
+            <th>Author</th>
+            <th>Book's release date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</body>
+</html>
